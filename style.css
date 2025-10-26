@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at 30% 30%, #141829, #0a0b0e 70%);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #a0b9ff;
+  text-shadow: 0 0 20px #5f7bff;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin: 15px 0 30px;
+  color: #cdd3ff;
+}
+.subtitle span {
+  color: #8ab4ff;
+  font-weight: 600;
+}
+
+.input-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(138, 180, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.1);
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+  border: 1px solid #3445ff;
+  background: #0d0f16;
+  color: #fff;
+  padding: 10px;
+  resize: none;
+}
+
+button {
+  background: #425aff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #5f7bff;
+  transform: scale(1.03);
+}
+
+.output {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(138, 180, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 320px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(95, 123, 255, 0.15);
+  animation: fadeIn 1s ease;
+}
+.card h3 {
+  color: #8ab4ff;
+  margin-bottom: 10px;
+}
+
+pre {
+  white-space: pre-line;
+  line-height: 1.5;
+  font-family: monospace;
+  color: #cdd3ff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #cdd3ff;
+}
+ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(138, 180, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+}
+ul li span.conf {
+  color: #8ab4ff;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #7c8dff;
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

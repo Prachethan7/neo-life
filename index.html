@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo-Life | AI Reasoning for Rare Diseases</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🧬 Neo-Life</h1>
+    <p class="subtitle">
+      Describe a <span>rare disease case</span> — Neo-Life uses 
+      <span>K2 Think reasoning</span> to infer root causes 
+      and suggest possible biological treatments.
+    </p>
+
+    <div class="input-box">
+      <label for="symptom">Symptom Description</label>
+      <textarea id="symptom" placeholder="Example: unexplained muscle fatigue"></textarea>
+      <button id="analyzeBtn">Analyze</button>
+    </div>
+
+    <div id="output" class="output hidden">
+      <div class="card">
+        <h3>🧠 Reasoning Graph</h3>
+        <pre id="reasoning"></pre>
+      </div>
+      <div class="card">
+        <h3>🧪 Suggested Interventions</h3>
+        <ul id="interventions"></ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>Powered by K2 Think Reasoning Engine — Neo-Life © 2025</footer>
+  <script src="script.js"></script>
+</body>
+</html>
